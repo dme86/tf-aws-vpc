@@ -18,6 +18,24 @@ module "vpc" {
 }
 ```
 
+## Example outputs.tf
+
+This example inside your root outputs.tf will output the ID, CIDR and the default Security Group ID of the VPC
+
+```hcl
+output "vpc_id" {
+  value  = module.vpc.id
+}
+
+output "vpc_cidr_block" {
+  value  = module.vpc.cidr_block
+}
+
+output "vpc_default_security_group_id" {
+  value  = module.vpc.default_security_group_id
+}
+```
+
 ## Attributes
 |Attribute|Description|Default|
 |--|--|--|

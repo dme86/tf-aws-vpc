@@ -19,13 +19,15 @@ module "vpc" {
 ```
 
 ## Attributes
-|Attribute|Default|
-|--|--|
-|enable_dns_support|true|
-|enable_dns_hostnames|false|
-|enable_classiclink|false|
-|enable_classiclink_dns_support|false|
-|assign_generated_ipv6_cidr_block|false|
+|Attribute|Description|Default|
+|--|--|--|
+|cidr_block|(Required) The CIDR block for the VPC.|10.0.0.0/16|
+|instance_tenancy|(Optional) A tenancy option for instances launched into the VPC. Using either of the other options (dedicated or host) costs at least $2/hr.|default|
+|enable_dns_support|(Optional) A boolean flag to enable/disable DNS support in the VPC.|true|
+|enable_dns_hostnames|(Optional) A boolean flag to enable/disable DNS hostnames in the VPC.|false|
+|enable_classiclink|(Optional) A boolean flag to enable/disable ClassicLink for the VPC. Only valid in regions and accounts that support EC2 Classic.|false|
+|enable_classiclink_dns_support|(Optional) A boolean flag to enable/disable ClassicLink DNS Support for the VPC. Only valid in regions and accounts that support EC2 Classic.|false|
+|assign_generated_ipv6_cidr_block|(Optional) Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block.|false|
 
 ## More
 

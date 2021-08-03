@@ -7,10 +7,14 @@ This module creates a simple VPC
 ```hcl
 module "vpc" {
   source         = "github.com/dme86/tf-aws-vpc?ref=v0.1"
-  cidr_block     = "10.0.0.0/24"
+  cidr_block     = "10.0.0.0/16"
+
    tags          = {
-    Owner        = "foo"
-  }
+
+    Owner        = "Terraform"
+    Foo          = "Bar"
+   }
+
 }
 ```
 

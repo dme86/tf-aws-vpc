@@ -26,3 +26,7 @@ module "vpc" {
 ## More
 
 Check out my other [terraform-aws-modules](https://github.com/dme86?tab=repositories&q=tf-aws)
+
+## Contact
+
+[Linkedin](https://www.linkedin.com/in/dmeier86/)

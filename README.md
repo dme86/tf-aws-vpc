@@ -22,3 +22,7 @@ module "vpc" {
 |enable_classiclink|false|
 |enable_classiclink_dns_support|false|
 |assign_generated_ipv6_cidr_block|false|
+
+## More
+
+Check out my other [terraform-aws-modules](https://github.com/dme86?tab=repositories&q=tf-aws)
